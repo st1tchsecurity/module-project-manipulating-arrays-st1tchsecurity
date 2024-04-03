@@ -197,9 +197,9 @@
     // 🧠 Note that pop modifies the original array in place and returns the "popped" element, whereas slice gives us a brand new array.
     function crazyTrimmer(arr) {
       if (arr.length % 2 === 0) {
-          arr.pop(); // Remove the last element if the array has an even number of elements
+          arr.pop();
       } else {
-          arr = arr.slice(1, -1); // Remove the first and last elements if the array has an odd number of elements
+          arr = arr.slice(1, -1);
       }
       return arr;
     }
